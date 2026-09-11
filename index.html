@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content=" Discover beautiful destinations and unforgettable experiences in Sri Lanka.">
+
+    <title>Discover Sri Lanka</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOADER ================= -->
+
+<div class="loader" id="loader">
+    <div class="loader-logo">
+        Lanka<span>Vibe</span>
+    </div>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        Lanka<span>Vibe</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#tours">Tours</a>
+        <a href="#booking">Booking</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#booking" class="nav-book">
+        BOOK A TRIP
+    </a>
+
+    <button class="menu-button" id="menuButton">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <button class="mobile-close" id="mobileClose">
+        ×
+    </button>
+
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#tours">Tours</a>
+    <a href="#booking">Booking</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            DISCOVER SRI LANKA
+        </p>
+
+        <h1 id="heroTitle">
+            Colombo
+        </h1>
+
+        <p class="hero-descrition" id="heroDescription">
+            Colombo is the energetic capital of Sri Lanka,
+            combining modern city life with ocean views,
+            shopping, cafés and beautiful sunset spots.
+        </p>
+
+        <button class="primary-button" id="heroReadMore">
+            READ MORE
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- HERO DESTINATION CARDS -->
+
+    <div class="hero-slider">
+
+        <button class="slider-arrow" id="previous">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div class="slider-container" id="sliderContainer">
+        </div>
+
+        <button class="slider-arrow" id="next">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+    <div>
+
+        <p class="section-label">
+            01 / ABOUT LANKAVIBE
+        </p>
+
+        <h2 class="section-title">
+            One island.<br>
+            <em>Endless stories.</em>
+        </h2>
+
+    </div>
+
+    <div class="about-text">
+
+        <p class="about-big">
+            Sri Lanka is a small island with a huge personality.
+        </p>
+
+        <p>
+            From the busy streets of Colombo to the peaceful
+            mountains of Nuwara Eliya, every destination offers
+            a completely different experience.
+        </p>
+
+        <p>
+            Discover beaches, wildlife, ancient kingdoms,
+            tea plantations, delicious food and unforgettable
+            adventures.
+        </p>
+
+        <a href="#destinations" class="primary-button">
+            EXPLORE DESTINATIONS
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section class="section destinations" id="destinations">
+
+    <p class="section-label">
+        02 / DESTINATIONS
+    </p>
+
+    <h2 class="section-title">
+        Where will<br>
+        <em>you go?</em>
+    </h2>
+
+
+    <!-- SEARCH + FILTER -->
+
+    <div class="destination-tools">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search destinations...">
+
+        </div>
+
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="city">
+                Cities
+            </button>
+
+            <button class="filter" data-filter="beach">
+                Beaches
+            </button>
+
+            <button class="filter" data-filter="mountain">
+                Mountains
+            </button>
+
+            <button class="filter" data-filter="wildlife">
+                Wildlife
+            </button>
+
+            <button class="filter" data-filter="culture">
+                Culture
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESTINATION CARDS -->
+
+    <div class="destination-grid" id="destinationGrid">
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCES ================= -->
+
+<section class="section experiences" id="experiences">
+
+    <p class="section-label">
+        03 / EXPERIENCES
+    </p>
+
+    <h2 class="section-title">
+        Travel<br>
+        <em>your way.</em>
+    </h2>
+
+
+    <div class="experience-grid">
+
+        <div class="experience experience-one">
+
+            <div class="experience-content">
+
+                <span>01</span>
+
+                <h3>
+                    Mountain Escapes
+                </h3>
+
+                <p>
+                    Ella · Nuwara Eliya · Kandy
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="experience experience-two">
+
+            <div class="experience-content">
+
+                <span>02</span>
+
+                <h3>
+                    Beach Days
+                </h3>
+
+                <p>
+                    Mirissa · Galle · Arugam Bay
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="experience experience-three">
+
+            <div class="experience-content">
+
+                <span>03</span>
+
+                <h3>
+                    Culture
+                </h3>
+
+                <p>
+                    Sigiriya · Kandy · Galle
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TOURS ================= -->
+
+<section class="section tours" id="tours">
+
+    <p class="section-label">
+        04 / TOUR PACKAGES
+    </p>
+
+    <h2 class="section-title">
+        Pick your<br>
+        <em>adventure.</em>
+    </h2>
+
+
+    <div class="tour-grid">
+
+
+        <!-- TOUR 1 -->
+
+        <div class="tour-card">
+
+            <span class="tour-days">
+                05 DAYS
+            </span>
+
+            <h3>
+                Hill Country
+            </h3>
+
+            <div class="tour-price">
+                Rs 60 000.00
+                <span>/ person</span>
+            </div>
+
+            <ul>
+                <li>✓ Kandy</li>
+                <li>✓ Nuwara Eliya</li>
+                <li>✓ Ella</li>
+                <li>✓ Scenic train ride</li>
+                <li>✓ Hotel accommodation</li>
+            </ul>
+
+            <button
+                class="tour-button"
+                onclick="chooseTour('Hill Country', '299')">
+
+                CHOOSE TOUR
+
+            </button>
+
+        </div>
+
+
+        <!-- TOUR 2 -->
+
+        <div class="tour-card featured">
+
+            <span class="tour-days">
+                07 DAYS · MOST POPULAR
+            </span>
+
+            <h3>
+                Island Explorer
+            </h3>
+
+            <div class="tour-price">
+                Rs.90 000.00
+                <span>/ person</span>
+            </div>
+
+            <ul>
+                <li>✓ Colombo</li>
+                <li>✓ Kandy</li>
+                <li>✓ Sigiriya</li>
+                <li>✓ Ella</li>
+                <li>✓ Galle</li>
+                <li>✓ Breakfast included</li>
+            </ul>
+
+            <button
+                class="tour-button"
+                onclick="chooseTour('Island Explorer', '499')">
+
+                CHOOSE TOUR
+
+            </button>
+
+        </div>
+
+
+        <!-- TOUR 3 -->
+
+        <div class="tour-card">
+
+            <span class="tour-days">
+                08 DAYS
+            </span>
+
+            <h3>
+                Wild Sri Lanka
+            </h3>
+
+            <div class="tour-price">
+                Rs 120 000.00
+                <span>/ person</span>
+            </div>
+
+            <ul>
+                <li>✓ Yala Safari</li>
+                <li>✓ Ella</li>
+                <li>✓ Nuwara Eliya</li>
+                <li>✓ Mirissa</li>
+                <li>✓ Wildlife experience</li>
+            </ul>
+
+            <button
+                class="tour-button"
+                onclick="chooseTour('Wild Sri Lanka', '599')">
+
+                CHOOSE TOUR
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section class="section booking" id="booking">
+
+    <div class="booking-wrapper">
+
+
+        <!-- BOOKING INTRO -->
+
+        <div class="booking-intro-area">
+
+            <p class="section-label">
+                05 / BOOK YOUR TRIP
+            </p>
+
+            <h2 class="booking-title">
+                Your Sri Lankan
+                <em>adventure starts here.</em>
+            </h2>
+
+            <p class="booking-description">
+
+                Choose your destination, package,
+                travel date and number of travelers.
+                Send us your booking request and we'll
+                get back to you.
+
+            </p>
+
+        </div>
+
+
+        <!-- BOOKING FORM -->
+
+        <div class="booking-card">
+
+            <form id="bookingForm">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bookingName"
+                        placeholder="Your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="bookingEmail"
+                        placeholder="your@email.com"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Phone / WhatsApp
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="bookingPhone"
+                        placeholder="+94 7X XXX XXXX"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Destination
+                    </label>
+
+                    <select id="bookingDestination" required>
+
+                        <option value="">
+                            Select destination
+                        </option>
+
+                        <option value="Colombo">
+                            Colombo
+                        </option>
+
+                        <option value="Kandy">
+                            Kandy
+                        </option>
+
+                        <option value="Ella">
+                            Ella
+                        </option>
+
+                        <option value="Sigiriya">
+                            Sigiriya
+                        </option>
+
+                        <option value="Galle">
+                            Galle
+                        </option>
+
+                        <option value="Yala">
+                            Yala
+                        </option>
+
+                        <option value="Nuwara Eliya">
+                            Nuwara Eliya
+                        </option>
+
+                        <option value="Mirissa">
+                            Mirissa
+                        </option>
+
+                        <option value="Arugam Bay">
+                            Arugam Bay
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Tour Package
+                    </label>
+
+                    <select id="bookingPackage" required>
+
+                        <option value="">
+                            Select package
+                        </option>
+
+                        <option value="299">
+                            Hill Country - Rs.60 000.00
+                        </option>
+
+                        <option value="499">
+                            Island Explorer - Rs.90 000.00
+                        </option>
+
+                        <option value="599">
+                            Wild Sri Lanka - Rs.120 000.00
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Travel Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="bookingDate"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Travelers
+                        </label>
+
+                        <input
+                            type="number"
+                            id="bookingTravelers"
+                            min="1"
+                            max="20"
+                            value="1"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRICE -->
+
+                <div class="price-box">
+
+                    <span>
+                        ESTIMATED TOTAL
+                    </span>
+
+                    <strong id="totalPrice">
+                        Rs.
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="booking-submit">
+
+                    CONFIRM BOOKING REQUEST
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- SUCCESS -->
+
+            <div
+                class="booking-success"
+                id="bookingSuccess">
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Booking Received!
+                </h3>
+
+                <p>
+                    Thank you for choosing LankaVibe.
+                </p>
+
+                <div
+                    class="booking-reference"
+                    id="bookingReference">
+                </div>
+
+                <p>
+                    Your booking request has been saved.
+                </p>
+
+                <a
+                    href="#"
+                    id="whatsappBooking"
+                    class="whatsapp-button"
+                    target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    SEND BOOKING ON WHATSAPP
+
+                </a>
+
+                <button
+                    class="another-booking"
+                    onclick="newBooking()">
+
+                    MAKE ANOTHER BOOKING
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="section gallery" id="gallery">
+
+    <p class="section-label">
+        06 / GALLERY
+    </p>
+
+    <h2 class="section-title">
+        See the island<br>
+        <em>through our eyes.</em>
+    </h2>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item gallery-large">
+            <img src="images/Ella.jpeg" alt="Ella">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Colombo.jpeg" alt="Colombo">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Kandy.jpeg" alt="Kandy">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Galle.jpeg" alt="Galle">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Mirissa.jpeg" alt="Mirissa">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Yala.jpeg" alt="Yala">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Sigiriya.jpeg" alt="Sigiriya">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="contact-container">
+
+        <div>
+
+            <p class="section-label">
+                07 / CONTACT
+            </p>
+
+            <h2>
+                Let's plan
+                <em>something beautiful.</em>
+            </h2>
+
+            <p class="contact-description">
+                Have a question or want a custom itinerary?
+                Send us a message.
+            </p>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Your name"
+                required>
+
+            <input
+                type="email"
+                id="contactEmail"
+                placeholder="Email address"
+                required>
+
+            <textarea
+                id="contactMessage"
+                rows="6"
+                placeholder="Tell us what you're looking for..."
+                required></textarea>
+
+            <button
+                type="submit"
+                class="submit-button">
+
+                SEND MESSAGE
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+            <p id="contactSuccess"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="logo">
+        Lanka<span>Vibe</span>
+    </div>
+
+    <p>
+        Explore more. Travel slower.
+    </p>
+
+    <p>
+        © 2026 LankaVibe
+    </p>
+
+</footer>
+
+
+<!-- ================= DESTINATION MODAL ================= -->
+
+<div class="modal" id="destinationModal">
+
+    <div class="modal-box">
+
+        <button
+            class="close-modal"
+            onclick="closeDestination()">
+
+            ×
+
+        </button>
+
+
+        <img
+            class="modal-image"
+            id="modalImage"
+            src=""
+            alt="">
+
+
+        <div class="modal-info">
+
+            <p
+                class="modal-location"
+                id="modalLocation">
+            </p>
+
+            <h2
+                class="modal-title"
+                id="modalTitle">
+            </h2>
+
+            <p
+                class="modal-description"
+                id="modalDescription">
+            </p>
+
+
+            <div class="modal-details">
+
+                <div>
+
+                    <small>
+                        BEST TIME
+                    </small>
+
+                    <strong id="modalBestTime">
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <small>
+                        AREA
+                    </small>
+
+                    <strong id="modalArea">
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <h4>
+                Things to do
+            </h4>
+
+            <ul
+                class="activities"
+                id="modalActivities">
+            </ul>
+
+
+            <a
+                href="#"
+                target="_blank"
+                id="mapButton"
+                class="map-button">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                OPEN IN GOOGLE MAPS
+
+            </a>
+
+
+            <button
+                class="modal-book-button"
+                onclick="bookDestination()">
+
+                BOOK THIS DESTINATION →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button
+        class="close-lightbox"
+        id="closeLightbox">
+
+        ×
+
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="">
+
+</div>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+    class="top-button"
+    id="topButton">
+
+    ↑
+
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
